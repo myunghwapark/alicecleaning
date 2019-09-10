@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".customer.CustomerNewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <!-- Customer First name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_first_name"
+                    android:textColor="@color/redOrange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@drawable/box_border_gray"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+
+            </LinearLayout>
+            <!--// Customer First name -->
+
+            <!-- Customer Last name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_last_name"
+                    android:textColor="@color/redOrange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@drawable/box_border_gray"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical" />
+
+
+            </LinearLayout>
+            <!--// Customer Last name -->
+
+
+            <!-- Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_address"
+                    android:textColor="@color/redOrange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_customer_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_border_gray"
+                    android:inputType="textPostalAddress"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <!--// Address -->
+
+
+            <!-- Number of Room -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_number_of_room"
+                    android:textColor="@color/redOrange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_number_of_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_border_gray"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <!--// Number of Room -->
+
+            <!-- Number of Bathroom -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_number_of_bathroom"
+                    android:textColor="@color/redOrange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_number_of_bathroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_border_gray"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <!--// Number of Bathroom -->
+
+            <!-- Mobile Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_mobile_number"
+                    android:textColor="@color/redOrange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_mobile_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_border_gray"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <!--// Mobile Number -->
+
+            <!-- Email Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_email_address"
+                    android:textColor="@color/redOrange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_email_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_border_gray"
+                    android:inputType="textWebEmailAddress"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <!--// Email Address -->
+
+
+
+            <!-- Note -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_note"
+                    android:textColor="@color/redOrange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="@drawable/box_border_gray"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <!--// Note -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_marginBottom="20dp"
+                android:baselineAligned="false"
+                android:gravity="center|center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_gray_selector"
+                    android:gravity="center"
+                    android:text="@string/text_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_red_orange_selector"
+                    android:gravity="center"
+                    android:text="@string/text_save"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

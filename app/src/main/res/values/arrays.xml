@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="staff_search_type">
+        <item>First Name</item>
+        <item>Last Name</item>
+        <item>Address</item>
+    </string-array>
+
+</resources>

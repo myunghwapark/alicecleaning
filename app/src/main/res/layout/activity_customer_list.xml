@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    tools:context=".customer.CustomerListActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layout_search_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <Spinner
+            android:id="@+id/spinner_search_type"
+            style="@style/style_Spinner_Small"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/textGray"
+            android:textSize="16sp"
+            android:entries="@array/staff_search_type"/>
+
+        <EditText
+            android:id="@+id/edit_search_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/box_border_gray"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black"
+            android:hint="@string/search_customer_hint"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:imeOptions="actionSearch"/>
+
+        <ImageButton
+            android:id="@+id/btn_search_customer"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:maxWidth="25dp"
+            android:maxHeight="24dp"
+            android:scaleType="fitStart"
+            android:layout_gravity="center|center_vertical"
+            android:src="@drawable/btn_search"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/customer_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_search_customer"/>
+
+    <ImageButton
+        android:id="@+id/btn_new_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_plus_selector"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:maxHeight="45dp"
+        android:maxWidth="45dp"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

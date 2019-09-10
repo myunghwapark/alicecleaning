@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_task_list"
+        android:icon="@drawable/btn_task"
+        android:title="Task List"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_customer_list"
+        android:icon="@drawable/btn_customer"
+        android:title="Customer List"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_staff_list"
+        android:icon="@drawable/btn_staff"
+        android:title="Staff List"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_setting"
+        android:icon="@drawable/btn_setting"
+        android:title="Setting"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_youtube"
+        android:icon="@drawable/btn_youtube"
+        android:title="Youtube"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

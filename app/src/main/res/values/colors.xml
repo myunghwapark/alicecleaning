@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00acd5</color>
+    <color name="colorPrimaryDark">#0071ab</color>
+    <color name="colorAccent">#fc8369</color>
+    <color name="bgDark">#32486f</color>
+    <color name="transparency">#00000000</color>
+    <color name="bgColor">#fefef8</color>
+    <color name="redOrange">#fc8369</color>
+    <color name="grayBorder">#c1c1c1</color>
+    <color name="lightGray">#dadada</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#2e2e2e</color>
+    <color name="btnBgRedOrange">#f56c4c</color>
+    <color name="btnBgRedOrangeOn">#eb5634</color>
+    <color name="btnBorderRedOrange">#e32435</color>
+    <color name="btnBgRedLight">#ffdfd7</color>
+    <color name="btnBgRedLightOn">#ffbaaa</color>
+    <color name="btnBorderRedLight">#ffa48f</color>
+    <color name="bgSplash">#00acd5</color>
+    <color name="btnBgBlue">#86d8ec</color>
+    <color name="btnBgGray">#b4b4b4</color>
+    <color name="btnBgGrayOn">#8e8e8e</color>
+    <color name="btnBorderGray">#7a7a7a</color>
+    <color name="textGray">#626262</color>
+    <color name="line">#ffcec3</color>
+</resources>

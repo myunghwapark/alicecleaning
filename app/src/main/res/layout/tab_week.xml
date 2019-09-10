@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_task_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/btn_arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_arrow_left"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:maxHeight="28dp"
+            android:maxWidth="45dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/text_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/redOrange"
+            android:text="November"/>
+
+        <ImageButton
+            android:id="@+id/btn_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_arrow_right"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:maxHeight="28dp"
+            android:maxWidth="45dp"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_task_week">
+
+        <LinearLayout
+            android:id="@+id/layout_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btn_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_map"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:maxHeight="48dp"
+        android:maxWidth="48dp"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

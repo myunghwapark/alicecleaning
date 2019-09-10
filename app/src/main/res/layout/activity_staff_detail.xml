@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    android:padding="10dp"
+    tools:context=".staff.StaffDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_staff_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <Button
+                    android:id="@+id/btn_working_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_round_blue_selector"
+                    android:padding="8dp"
+                    android:text="@string/text_working_history"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+
+            <!-- Available Time -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_available_time"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnBorderGray"/>
+
+                <TextView
+                    android:id="@+id/text_available_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/redOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray"/>
+            <!--// Available Time -->
+
+            <!-- Account number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_account_number"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnBorderGray"/>
+
+                <TextView
+                    android:id="@+id/text_account_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/redOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray"/>
+
+            <!--// Account number -->
+
+            <!-- Staff address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_address"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnBorderGray"/>
+
+                <TextView
+                    android:id="@+id/text_staff_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/redOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray"/>
+
+            <!--// Staff address -->
+
+            <!-- Staff Phone Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_mobile_number"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnBorderGray"/>
+
+                <TextView
+                    android:id="@+id/text_staff_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/redOrange"/>
+
+                <ImageButton
+                    android:id="@+id/btn_call"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:maxWidth="25dp"
+                    android:maxHeight="24dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/btn_call" />
+
+                <ImageButton
+                    android:id="@+id/btn_sms"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:maxWidth="25dp"
+                    android:maxHeight="24dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/btn_sms" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray"/>
+
+            <!--// Staff Phone Number -->
+
+            <!-- Staff Email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_email_address"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnBorderGray"/>
+
+                <TextView
+                    android:id="@+id/text_staff_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/redOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray"/>
+
+            <!--// Staff Email -->
+
+            <!-- Day of Birth -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_day_of_birth"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnBorderGray"/>
+
+                <TextView
+                    android:id="@+id/text_day_of_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/redOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray"/>
+
+            <!--// Day of Birth -->
+
+            <!-- Staff wages -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_wages"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnBorderGray"/>
+
+                <TextView
+                    android:id="@+id/text_staff_wages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/redOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray"/>
+
+            <!--// Staff wages -->
+
+            <!-- Staff Note -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_note"
+                    android:textSize="16sp"
+                    android:textColor="@color/btnBorderGray"/>
+
+                <TextView
+                    android:id="@+id/text_staff_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/redOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGray"/>
+
+            <!--// Staff Note -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_marginBottom="20dp"
+                android:baselineAligned="false"
+                android:gravity="center|center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_gray_selector"
+                    android:gravity="center"
+                    android:text="@string/text_delete"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_modify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_red_orange_selector"
+                    android:gravity="center"
+                    android:text="@string/text_modify"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

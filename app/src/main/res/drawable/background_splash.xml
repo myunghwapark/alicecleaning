@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <item android:drawable="@color/bgSplash"/>
+
+    <!-- Set the Background Image-->
+    <item android:gravity="center_horizontal|center_vertical" android:width="200dp" android:height="252dp">
+        <bitmap
+            android:src="@drawable/bg_splash"
+            android:background="@color/bgSplash"/>
+    </item>
+</layer-list>
